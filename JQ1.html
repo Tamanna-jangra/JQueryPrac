@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="at.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('p').on('click',function(){
+           $(this).text('clicked').delay(800).fadeOut(400);
+        });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('h').click(function(){
+                $(this).text('clicked');
+            });
+        });
+    </script>
+    <link
+</head>
+<body>
+
+<h>call back function start from function()</h>
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+<button id="btu">button</button>
+</body>
+</html>
