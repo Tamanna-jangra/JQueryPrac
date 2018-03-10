@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>first JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('button').on('click', function () {
+              $('a').attr('href', 'https://github.com/');
+              document.write($('a').attr('href'));
+          });
+      });
+    /* document.getElementById('a').onclick = function({
+                                                         document.write('i have clicked');
+      });*/
+      /*  $("li").on('click',function(){               //problem????????????
+            $(this).text("clicked");
+        });*/
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('p').on('click',function(){
+                $(this).text('tamanna');
+            });
+        });
+    </script>
+</head>
+<body>
+<h> JQuery</h>
+ <ul>
+     <li>rule 1</li>
+     <li>rule 2</li>
+     <li>rule 3</li>
+ </ul>
+<p>hello, how are you???</p>
+<button id="a">click me</button>
+     <script>
+           var list = document.getElementByTagName('li');
+             for(let i=0;i<list;i+=1)
+              {
+                  list[i].addEventListener('click',function(){
+                      this.textContent='clicked';
+                  });
+              }
+          //element selector         // descendant selectors
+         // $('p')                    //  $('p  a')
+         // $('li')
+         // $('img')
+
+         // class and IDs             // attribute selector
+         // $('.blog-post')           //$([name='newwsletter'])
+         // $('#about')
+     </script>
+</body>
+</html>
